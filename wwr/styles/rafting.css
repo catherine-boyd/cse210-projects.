@@ -145,3 +145,67 @@ footer{
     gap:16px;
     margin-left:auto;
 }
+
+.happy-employees{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:36px;
+}
+.happy-employees img{
+    height:400px;
+    max-width: 100%;
+    object-fit: contain;
+    
+}
+.info-form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 300px;
+    margin-block: 120px;
+}
+.company-info-map{
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+}
+label + input[type="text"],label + input[type="email"],label + textarea{
+    display: block;
+}
+form{
+    max-width: 500px;
+    width:100%;
+}
+form > * {
+    margin-bottom: 16px;
+}
+input[type="text"], input[type="email"]{
+    width:100%;
+    padding-block: 12px;
+    padding-left:16px;
+}
+input[type="radio"]{
+    accent-color: var(--accent2-color);
+}
+.message-text-area{
+    width: 100%;
+}
+.subscribe-checkbox-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.subscribe-checkbox{
+    accent-color: var(--accent2-color);
+    width: 20px;
+    height:20px
+}
+.submit-button{
+    padding:10px 36px;
+    border:0;
+    box-shadow: 2px 2px 24px #797a7b46;;
+    background-color: var(--secondary-color);
+    color:var(--accent1-color);
+    border-radius: 8px;
+    cursor: pointer;
+}
