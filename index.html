@@ -1,37 +1,88 @@
 <!DOCTYPE html>
-<html lang = "en-US">
+<html lang="en-us">
     <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Catherine okumah-Boyd | WDD 130</title>
-        <meta name="description" content=" My name is Catherine Boyd. I'm learning more about web developments. The purpose of this page is to display the information about myself.  ">
-        <meta name = "author" content=" Catherine Okumah-Boyd">
-        <link href="./styles.css" rel="stylesheet" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content=" My name is Catherine Boyd. I'm creating a whitewater rafting website. The purpose of this website is to create an immersive and user-friendly platform that showcases the thrill of whitewater rafting, while providing a seamless experience for customers to plan and book their adventures.   "/>
+        <meta name="author" content="Catherine Okumah-Boyd"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+        <link href="./styles/rafting.css" rel="stylesheet"/>
+        <title>about</title>
     </head>
     <body>
-    <header>
-        <nav>
-            <a href="#">Home</a>
-            <a href="wwr/">Rafting Website</a>
-        </nav>
-    </header>
-    <main>
-        <h1>Catherine Okumah-Boyd | WDD 130</h1>
-        <img src="images/profile.jpg" alt="Hello, my name is Catherine Okumah-Boyd" width="200" />
-        <p>Hello! My name is catherine Okumah-Boyd and from Ghana, Accra. I love to read novels and watch moves.</p>
-    </main>
-    <aside>
-        <h2> Ghana</h2>
-        <img src="./images/ghana.jpg" alt="Ghana Landscape">
-        <p> Ghana, located in West Africa, 
-            is known for its rich history and vibrant culture.
-            It was the first African nation to gain independence in 1957.
-            With beautiful Landscapes, diverse traditions, aand warm hospitality,
-             Ghana is a unique blend of heritage and progress
-        </p>
-    </aside>
-    <footer>
-        <p>&copy; 2025 Catherine Okumah-Boyd  Ghana, Accra</p>
-    </footer>
+        <header>
+            <img src = "./images/rafting-logo.png" alt="A water rafting logo"/>
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="trips.html">Trips</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+        <main>
+            <div class="hero-wrapper">
+                <img id="rafting-hero" src="./images/raftinghero.jpg" alt="A water rafting image"/>
+                <h1>CATHERINE'S WHITE WATER RAFTING</h1>
+            </div>
+            <div class="newsletter-cta">
+                <div class="newsletter-container">
+                    <form class="newsletter-form">
+                        <h2>Newletter</h2>
+                        <div>
+                            <label for="name">Name</label>
+                            <input type="text" id="name" />
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" />
+                        </div>
+                        <button type="button">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+                <div class="trip-cta-container">
+                    <button class="trip-cta-button">Explore Trips</button>
+                </div>
+            </div>
+
+            <div class="grid-container">
+                <section class="grid-item">
+                    <img src="./images/rafting-image-1.jpg" alt="Rafting in action">
+                    <div class="content">
+                      <h2>Our Purpose</h2>
+                      <p>
+                        Our mission is to provide unforgettable white water rafting experiences that connect people with nature, challenge their limits, and promote team bonding in a safe, exciting environment.
+                      </p>
+                    </div>
+                  </section>
+              
+                  <section class="grid-item">
+                    <img src="./images/rafting-image-2.jpg" alt="Smiling group after rafting">
+                    <div class="content">
+                      <h2>What We Offer</h2>
+                      <p>
+                        From beginner-friendly floats to expert-level rapids, we offer guided trips for all skill levels. Join us for full-day adventures, weekend retreats, or custom team-building events.
+                      </p>
+                    </div>
+                  </section>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2025, Catherine's White Water Rafting</p>
+            <nav class="sociallinks">
+                <a class="social-link" href="http://facebook.com">
+                    <img src="./images/facebook.svg" alt="Facebook"/>
+                </a>
+                <a class="social-link" href="http://twitter.com">
+                    <img src="./images/twitter.svg" alt="Twitter logo"/>
+                </a>
+                <a class="social-link" href="http://instagram.com">
+                    <img src="./images/instagram.svg" alt="Instagram logo"/>
+                </a>
+            </nav>
+        </footer>
     </body>
-</html>        
+</html>
