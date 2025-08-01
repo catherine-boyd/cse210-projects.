@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Reflection;
 using System.Security.Cryptography.X509Certificates;
 using System.Transactions;
+using YouTubeVideos;
 
 class Program
 {
@@ -38,70 +39,5 @@ class Program
             }
             Console.WriteLine();
         }
-        
-        
-
-    }
-}
-class Video
-{
-    private string _title = "";
-    private string _author = "";
-    private int _length = 0;
-    private List<Comments> _comments = new List<Comments>();
-
-    public string GetTitle()
-    {
-        return _title;
-    }
-    public string GetAuthor()
-    {
-        return _author;
-    }
-    public int GetLength()
-    {
-        return _length;
-    }
-    public int GetCommentLength()
-    {
-        return _comments.Count;
-    }
-
-    public List<Comments> GetComments()
-    {
-        return _comments;
-    }
-    public Video(string author, List<Comments> comments, int length, string title)
-    {
-        _author = author;
-        _length = length;
-        _comments = comments;
-        _title = title;
-    }
-    public int Length()
-    {
-        return _length;
-    }
-}
-
-class Comments
-{
-    string _name = "";
-    string _text = "";
-
-
-    public Comments(string name, string text)
-    {
-        _name = name;
-        _text = text;
-    }
-
-    public string GetName()
-    {
-        return _name;
-    }
-    public string GetText()
-    {
-        return _text;
     }
 }
