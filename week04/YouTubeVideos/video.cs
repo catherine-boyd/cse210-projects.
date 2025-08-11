@@ -12,7 +12,7 @@ namespace YouTubeVideos
         private string _title = "";
         private string _author = "";
         private int _length = 0;
-        private List<Comments> _comments = new List<Comments>();
+        private List<Comments> _comments;
 
         public string GetTitle()
         {
@@ -33,7 +33,7 @@ namespace YouTubeVideos
 
         public List<Comments> GetComments()
         {
-            return _comments;
+            return _comments.ToList();
         }
         public Video(string author, List<Comments> comments, int length, string title)
         {
